@@ -1,0 +1,22 @@
+# Keil MDK build and listing output
+Objects/
+Listings/
+DebugConfig/
+
+# Per-user Keil workspace and debug settings
+*.uvguix.*
+*.uvoptx
+
+# Generated build artifacts
+*.axf
+*.bin
+*.hex
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+*.map
+*.lst
+*.sct
+*.build_log.htm
