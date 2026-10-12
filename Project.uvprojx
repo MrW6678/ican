@@ -52,7 +52,7 @@
           <OutputName>Project</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Listings\</ListingPath>
@@ -711,14 +711,24 @@
               <FilePath>.\Hardware\Serial.h</FilePath>
             </File>
             <File>
-              <FileName>Motor.c</FileName>
+              <FileName>Stepper.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Hardware\Motor.c</FilePath>
+              <FilePath>.\Hardware\Stepper.c</FilePath>
             </File>
             <File>
-              <FileName>Motor.h</FileName>
+              <FileName>Stepper.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Hardware\Motor.h</FilePath>
+              <FilePath>.\Hardware\Stepper.h</FilePath>
+            </File>
+            <File>
+              <FileName>StepperControl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\StepperControl.c</FilePath>
+            </File>
+            <File>
+              <FileName>StepperControl.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\StepperControl.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -23,6 +23,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
+#include "Stepper.h"
+extern volatile uint32_t App_Milliseconds;
 
 /** @addtogroup STM32F10x_StdPeriph_Template
   * @{
@@ -46,6 +48,8 @@
   */
 void NMI_Handler(void)
 {
+  Stepper_EmergencyDisable();
+  while (1) { }
 }
 
 /**
@@ -55,6 +59,7 @@ void NMI_Handler(void)
   */
 void HardFault_Handler(void)
 {
+  Stepper_EmergencyDisable();
   /* Go to infinite loop when Hard Fault exception occurs */
   while (1)
   {
@@ -68,6 +73,7 @@ void HardFault_Handler(void)
   */
 void MemManage_Handler(void)
 {
+  Stepper_EmergencyDisable();
   /* Go to infinite loop when Memory Manage exception occurs */
   while (1)
   {
@@ -81,6 +87,7 @@ void MemManage_Handler(void)
   */
 void BusFault_Handler(void)
 {
+  Stepper_EmergencyDisable();
   /* Go to infinite loop when Bus Fault exception occurs */
   while (1)
   {
@@ -94,6 +101,7 @@ void BusFault_Handler(void)
   */
 void UsageFault_Handler(void)
 {
+  Stepper_EmergencyDisable();
   /* Go to infinite loop when Usage Fault exception occurs */
   while (1)
   {
@@ -134,6 +142,7 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
+  ++App_Milliseconds;
 }
 
 /******************************************************************************/

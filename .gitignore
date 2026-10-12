@@ -20,3 +20,7 @@ DebugConfig/
 *.lst
 *.sct
 *.build_log.htm
+
+# Local full backup and host test executables
+desktop-code-before-stepper-*.zip
+tests/*.exe
