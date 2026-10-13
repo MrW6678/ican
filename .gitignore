@@ -1,0 +1,22 @@
+# Keil 编译生成文件
+Objects/
+Listings/
+*.axf
+*.hex
+*.bin
+*.elf
+*.map
+*.lst
+*.crf
+*.d
+*.o
+*.lnp
+*.iex
+
+# Keil 个人界面和调试配置
+*.uvguix
+*.uvguix.*
+*.uvoptx
+
+# 备份文件
+*.bak
